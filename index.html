@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TechPulse - A modern cyber-tech blog exploring AI, Web Development, Cybersecurity, and Future Tech trends." />
+  <meta name="keywords" content="Tech Blog, AI, Web Development, Cybersecurity, JavaScript, Programming" />
+  <meta name="author" content="TechPulse" />
+
+  <title>TechPulse | Cyber Tech Blog</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-slate-950 text-gray-100 font-sans">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/70 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-r from-cyan-400 to-purple-500"></div>
+        <h1 class="text-xl font-bold tracking-wide">TechPulse</h1>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#" class="hover:text-cyan-400 transition">Home</a>
+        <a href="#" class="hover:text-cyan-400 transition">AI</a>
+        <a href="#" class="hover:text-cyan-400 transition">Web Dev</a>
+        <a href="#" class="hover:text-cyan-400 transition">Cybersecurity</a>
+        <a href="#" class="hover:text-cyan-400 transition">About</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <button id="searchBtn" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="flex flex-col gap-3 text-sm">
+        <a href="#" class="py-2 border-b border-white/10">Home</a>
+        <a href="#" class="py-2 border-b border-white/10">AI</a>
+        <a href="#" class="py-2 border-b border-white/10">Web Dev</a>
+        <a href="#" class="py-2 border-b border-white/10">Cybersecurity</a>
+        <a href="#" class="py-2">About</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="pt-28 pb-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+
+        <img 
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+          class="w-full h-[420px] object-cover opacity-60"
+          alt="Tech Hero"
+        />
+
+        <div class="absolute inset-0 flex flex-col justify-center p-8 md:p-14">
+          <span class="text-cyan-400 font-semibold tracking-widest">FEATURED ARTICLE</span>
+          <h2 class="text-3xl md:text-5xl font-bold mt-3 leading-tight">
+            The Future of AI Engineering in 2026
+          </h2>
+          <p class="mt-4 max-w-2xl text-gray-300">
+            Discover how generative AI, autonomous agents, and next-gen machine learning pipelines are reshaping software development.
+          </p>
+
+          <button class="mt-6 w-fit px-5 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transition">
+            Read Article
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 pb-16">
+
+    <!-- BLOG GRID -->
+    <section class="lg:col-span-8">
+
+      <h3 class="text-xl font-bold mb-5">Latest Articles</h3>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- POST 1 -->
+        <article class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" class="h-44 w-full object-cover" />
+          <div class="p-4">
+            <h4 class="font-bold text-lg">Modern JavaScript Architecture Patterns</h4>
+            <p class="text-sm text-gray-400 mt-2">Explore scalable frontend architecture using modular design and component-driven development.</p>
+          </div>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" class="h-44 w-full object-cover" />
+          <div class="p-4">
+            <h4 class="font-bold text-lg">AI Tools Every Developer Must Know</h4>
+            <p class="text-sm text-gray-400 mt-2">Boost productivity with cutting-edge AI coding assistants and automation tools.</p>
+          </div>
+        </article>
+
+        <!-- POST 3 -->
+        <article class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" class="h-44 w-full object-cover" />
+          <div class="p-4">
+            <h4 class="font-bold text-lg">Cybersecurity Threats in 2026</h4>
+            <p class="text-sm text-gray-400 mt-2">Understand evolving cyber threats and how to protect modern web systems.</p>
+          </div>
+        </article>
+
+        <!-- POST 4 -->
+        <article class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="h-44 w-full object-cover" />
+          <div class="p-4">
+            <h4 class="font-bold text-lg">Cloud Computing Best Practices</h4>
+            <p class="text-sm text-gray-400 mt-2">Learn how to optimize cloud infrastructure for scalability and performance.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="flex justify-center mt-10 gap-2">
+        <button class="px-4 py-2 bg-white/5 rounded-lg hover:bg-white/10">Prev</button>
+        <button class="px-4 py-2 bg-cyan-500 rounded-lg">1</button>
+        <button class="px-4 py-2 bg-white/5 rounded-lg hover:bg-white/10">2</button>
+        <button class="px-4 py-2 bg-white/5 rounded-lg hover:bg-white/10">Next</button>
+      </div>
+
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="lg:col-span-4 space-y-6">
+
+      <!-- AUTHOR -->
+      <div class="p-5 bg-white/5 border border-white/10 rounded-xl">
+        <h4 class="font-bold text-lg">About Author</h4>
+        <p class="text-sm text-gray-400 mt-2">
+          TechPulse is a modern tech publication focused on AI, software engineering, and cybersecurity insights for developers.
+        </p>
+      </div>
+
+      <!-- TRENDING -->
+      <div class="p-5 bg-white/5 border border-white/10 rounded-xl">
+        <h4 class="font-bold text-lg mb-3">Trending Posts</h4>
+        <ul class="space-y-3 text-sm text-gray-300">
+          <li>🔥 AI Agents replacing SaaS?</li>
+          <li>⚡ Next.js vs React Performance</li>
+          <li>🛡 Zero Trust Security Models</li>
+          <li>🚀 Web3 Infrastructure Explained</li>
+        </ul>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="p-5 bg-gradient-to-r from-cyan-500/20 to-purple-600/20 border border-white/10 rounded-xl">
+        <h4 class="font-bold text-lg">Newsletter</h4>
+        <p class="text-sm text-gray-300 mt-2">Get weekly tech insights delivered to your inbox.</p>
+
+        <input type="email" placeholder="Enter your email"
+          class="w-full mt-4 p-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none" />
+
+        <button class="w-full mt-3 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold">
+          Subscribe
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 bg-slate-900/50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+
+      <div>
+        <h5 class="font-bold text-lg">TechPulse</h5>
+        <p class="text-sm text-gray-400 mt-2">Future-focused tech blog for developers and innovators.</p>
+      </div>
+
+      <div>
+        <h5 class="font-bold">Explore</h5>
+        <ul class="text-sm text-gray-400 mt-2 space-y-2">
+          <li>AI</li>
+          <li>Web Development</li>
+          <li>Cybersecurity</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="font-bold">Company</h5>
+        <ul class="text-sm text-gray-400 mt-2 space-y-2">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="font-bold">Follow</h5>
+        <div class="flex gap-3 mt-3 text-xl">
+          <i class="fa-brands fa-github hover:text-cyan-400 cursor-pointer"></i>
+          <i class="fa-brands fa-x-twitter hover:text-cyan-400 cursor-pointer"></i>
+          <i class="fa-brands fa-linkedin hover:text-cyan-400 cursor-pointer"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center text-xs text-gray-500 py-4 border-t border-white/10">
+      © 2026 TechPulse. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="fixed bottom-5 right-5 p-3 bg-cyan-500 rounded-full hidden">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
